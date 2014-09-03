@@ -4,12 +4,12 @@ JEM.addContent({
 
 	type:   'nav',
 	parent: 'body',
-	styles: 'stylename1 stuff wot',
+	classes: 'stylename1 stuff wot',
 	children: [
 
-		{ type: 'link', address: '/', text: 'Home', classList: 'ok wot', style: 'margin-right: 5px;' },
+		{ type: 'link', address: '/', text: 'Home', classes: 'ok wot', styles: 'margin-right: 5px;' },
 		{ type: 'link', address: '/blog/', text: 'Blog' },
-		{ type: 'link', address: 'http://wikipedia.org', text: 'Wikipedia', target: '_blank', style: 'margin-left: 5px;', onmouseover: function(){
+		{ type: 'link', address: 'http://wikipedia.org', text: 'Wikipedia', target: '_blank', styles: 'margin-left: 5px;', onmouseover: function(){
 
 			console.log( 'Hovered over Wikipedia!' )
 		}}
@@ -18,7 +18,7 @@ JEM.addContent({
 JEM.addContent({
 
 	type:   'div',
-	style:  'padding-bottom: 40px;',
+	styles: 'padding-bottom: 40px;',
 	text:   'You should totally, like... try JEM.inspect() in the console.'
 })
 
@@ -26,6 +26,41 @@ JEM.addContent({
 
 
 /*
+
+
+type
+id
+classes
+styles
+
+
+
+
+
+[ 'nav', { 
+	
+	id: 'bigNav',
+	classes: 'stylename1 stuff wot',
+	styles:  'margin-right: 5px',
+	content: []
+
+}, 'parentNode' ]
+
+
+
+
+
+
+h1: {
+	
+	styles: 'stylename1 stuff wot',
+	content: [
+
+		nav: {}
+	]
+}
+
+
 
 
 JEM.addStyle({

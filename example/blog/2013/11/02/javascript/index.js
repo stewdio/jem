@@ -8,11 +8,11 @@
 JEM.includeOnce( '/blog/blog.js', function(){
 
 
-	blogBranches.process = function( item ){
+	blogPosts.process = function( item ){
 
+		if( JEM.verbosity >= 0.5 ) console.log( 'Trying to view this item:', item )
 		item.view()
 	}
-
 
 	
 	new BlogPost({
@@ -24,9 +24,6 @@ JEM.includeOnce( '/blog/blog.js', function(){
 			'cat-look.gif'
 		]
 	})
-
-
-	console.log('ok....')
 })
 
 

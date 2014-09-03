@@ -5,10 +5,9 @@
 function BlogBranch( slug, title ){
 
 	if( title === undefined ) title = slug.toString()
-	this.slug = slug
-	this.title = title
+	this.slug   = slug
+	this.title  = title
 	blogBranches.add( this )
-
 	//var t = this.constructor.name
 	//console.log( t )
 }
